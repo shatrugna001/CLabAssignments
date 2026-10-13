@@ -145,7 +145,6 @@ void program7(){
 
 void program8(){
 
-    void program8(){
 
     //printing tables
 
@@ -156,8 +155,8 @@ void program8(){
             printf("%d * %d = %d\n",i,j,j*i);   
         }
 
-        printf("");
-    } 
+        printf("\t");
+    
 }
 
 }

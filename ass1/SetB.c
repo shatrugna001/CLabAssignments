@@ -48,8 +48,6 @@ void program2()
 
 int main()
 {
-    program1();
     program2();
-
     return 0;
 }

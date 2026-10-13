@@ -3,38 +3,50 @@
 // i. ADD ii. SUBTRACT iii. MULTIPLY iv. EXIT
 
 #include <stdio.h>
-
+ 
 typedef struct {
-    
-    float real;
-    float img;
-    
-} complex;
-
-complex add( complex n1, complex n2);
-
+    double r, i;
+} Complex;
+ 
 int main()
 {
-    complex n1, n2, result;
-    
-    printf("Enter the first numbers\n");
-    printf("Enter the first and second part of the imaginary number: ");
-    scanf("%f %f",&n1.real,&n1.img);
-    printf("Enter the second numbers\n");
-    printf("Enter the first and second part of the imaginary number: ");
-    scanf("%f %f",&n2.real,&n2.img);
-
-    result = add(n1,n2);
-
-    printf("Sum = %1f + %1fi",result.real, result.img);
-    
+    Complex a, b;
+    int choice;
+ 
+    do {
+        printf("\n1.Add 2.Subtract 3.Multiply 4.Exit\n");
+        scanf("%d", &choice);
+ 
+        if(choice >= 1 && choice <= 3)
+        {
+            printf("Enter real and imaginary parts of first number: ");
+            scanf("%lf%lf", &a.r, &a.i);
+ 
+            printf("Enter real and imaginary parts of second number: ");
+            scanf("%lf%lf", &b.r, &b.i);
+        }
+ 
+        switch(choice)
+        {
+            case 1:
+                printf("%.2f %+.2fi\n", a.r+b.r, a.i+b.i);
+                break;
+ 
+            case 2:
+                printf("%.2f %+.2fi\n", a.r-b.r, a.i-b.i);
+                break;
+ 
+            case 3:
+                printf("%.2f %+.2fi\n", a.r*b.r-a.i*b.i, a.r*b.i+a.i*b.r);
+                break;
+ 
+            case 4:
+                break;
+ 
+            default:
+                printf("Invalid choice");
+        }
+    } while(choice != 4);
+ 
     return 0;
-}
-
-complex add(complex n1, complex n2)
-{
-    complex temp;
-    temp.real = n1.real + n2.real;
-    temp.img = n1.img + n2.img;
-    return temp;
 }
