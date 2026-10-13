@@ -113,33 +113,27 @@ void program6(){
 }
 
 void program7(){
-    int x,y;
+    int x, y;
 
-    printf("Enter integer 1:");
-    scanf("%d",&x);
-    printf("Enter integer 2:");
-    scanf("%d",&y);
+    printf("Enter integer 1: ");
+    scanf("%d", &x);
+    printf("Enter integer 2: ");
+    scanf("%d", &y);
 
-    for( int i = x; i <= y; i++){
+   
+    for (int i = x; i <= y; i++) {
+        int count = 0; 
 
-        int count = 0;
-
-        if ( i < 2)
-            continue;
-
-        for (int j = 2; j <= i; j++){
-
-            if ( i % j == 0)
-            {
+        
+        for (int j = 1; j <= i; j++) {
+            if (i % j == 0) {
                 count++;
             }
-            
         }
 
-        if (count == 2){
-            printf("%d\n",i);
+        if (count == 2) {
+            printf("%d\n", i);
         }
-        
     }
 }
 
@@ -181,6 +175,6 @@ void program9(){
 
 void main(){
 
-    program9();
+    program10();
 
 }
