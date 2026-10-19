@@ -19,9 +19,15 @@ void program2()
 
     for(int i = 0; i < n; i++)
     {
-        sum = sum + a[i][i];
+        for (int j = 0; j < n; j++)
+        {
+            if ( i == j)
+            {
+                sum = sum + a[i][j];
+            }
+        }
     }
-
+    
     printf("Sum of diagonal elements = %d", sum);
 }
 

@@ -15,15 +15,20 @@ int main()
             printf("Enter x: ");
             scanf("%lf", &x);
         }
- 
+
+        double radians = x;
+
+        double degrees = radians / ((180.0/3.141592653589793));
+
+
         switch(choice)
         {
             case 1:
-                printf("%.4f\n", sin(x));
+                printf("%.4f\n", sin(degrees));
                 break;
  
             case 2:
-                printf("%.4f\n", cos(x));
+                printf("%.4f\n", cos(degrees));
                 break;
  
             case 3:
