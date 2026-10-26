@@ -1,3 +1,7 @@
+// Write a program to accept numbers in the range of 1 to 25. Enter -1 to stop accepting the 
+// numbers from the user. Further accept a digit from the user from the given range and find 
+// the number of times that number has been entered (i.e. Hit Count of that number). 
+
 #include <stdio.h>
 
 void program2()

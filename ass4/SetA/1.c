@@ -1,41 +1,53 @@
+// Write  a  program  to  accept  n  numbers  in  an  array  and  display  the  largest  and  smallest 
+// number of the array.
+
 #include <stdio.h>
-
-void program1()
-{
-    int n, a[100], largest, smallest;
-
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-
-    for(int i = 0; i < n; i++)
-    {
-        printf("Enter number: ");
-        scanf("%d", &a[i]);
-    }
-
-    largest = a[0];
-    smallest = a[0];
-
-    for(int i = 1; i < n; i++)
-    {
-        if(a[i] > largest)
-        {
-            largest = a[i];
-        }
-
-        if(a[i] < smallest)
-        {
-            smallest = a[i];
-        }
-    }
-
-    printf("Largest number = %d\n", largest);
-    printf("Smallest number = %d", smallest);
-}
 
 int main()
 {
-    program1();
+    int arr[50],n;
+    int i,j,temp;
 
+    printf("Enter how many array elements you want to enter:");
+    scanf("%d",&n);
+
+    printf("Enter you array elements:");
+    for(int i = 0; i < n; i++)
+    {
+        scanf("%d",&arr[i]);
+    }
+
+    printf("Here are you array elements: ");
+    for(int i = 0; i < n; i++)
+    {
+        printf("%d ",arr[i]);
+    }
+    
+    int largest = arr[0];
+    int smallest = arr[0];
+    
+    for(i = 0; i<n; i++)
+    {
+        if ( arr[i] > largest)
+        {
+            largest = arr[i];
+        }
+    }
+    
+    for(i = 0; i<n; i++)
+    {
+        if ( arr[i] < smallest)
+        {
+            smallest = arr[i];
+        }
+    }
+    
+    
+    printf("\n");
+    
+    printf("The smallest number is %d\n",smallest);
+    printf("the Biggest number is %d\n",largest);
+    
     return 0;
+    
 }
