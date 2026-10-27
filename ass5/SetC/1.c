@@ -1,3 +1,6 @@
+// Accept date (dd, mm yy). Write a function to add no of days to the date and display the new
+// date. Pass dd, mm and yy to the function using pointers.
+
 #include <stdio.h>
 
 int leapYear(int y)

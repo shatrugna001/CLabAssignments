@@ -1,3 +1,6 @@
+// Write a program to read N integers in an array using pointers and display minimum from
+// them.
+
 #include <stdio.h>
 
 void minimum(int *p, int n, int *min)

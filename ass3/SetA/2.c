@@ -1,5 +1,9 @@
+// Write a function isPrime, which accepts an integer as parameter and returns 1 if the
+// number is prime, 0 otherwise. Use this function in main to accept n numbers and check
+// if they are prime or not. (Till user Quit)
+
 #include <stdio.h>
- 
+
 int isPrime(int n)
 {
     if(n < 2)

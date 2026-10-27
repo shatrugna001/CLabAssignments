@@ -1,3 +1,7 @@
+// Write a program to accept an mXn matrix and display an m+1 X n+1 matrix such that the
+// m+1th row contains the sum of all elements of corresponding row and the n+1th column
+// contains the sum of elements of the corresponding column.
+
 #include <stdio.h>
 
 void program2()

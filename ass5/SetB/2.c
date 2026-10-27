@@ -1,3 +1,6 @@
+// Accept n integers in array A in main. Write a function which takes this array as parameter
+// and find minimum and maximum from it. Display these values in main.
+
 #include <stdio.h>
 
 void findMinMax(int arr[], int n, int *min, int *max)

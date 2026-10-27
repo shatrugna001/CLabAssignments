@@ -1,3 +1,5 @@
+// Write a program to remove all duplicate elements from an array.
+
 #include <stdio.h>
 
 void program1()

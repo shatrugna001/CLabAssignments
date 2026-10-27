@@ -1,3 +1,5 @@
+// Write a program to accept n numbers in an array and calculate the average of n numbers.
+
 #include <stdio.h>
 
 void program1()

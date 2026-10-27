@@ -1,3 +1,5 @@
+// Write a program to find the sum of diagonal elements of a matrix.
+
 #include <stdio.h>
 
 void program2()

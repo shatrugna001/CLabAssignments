@@ -1,3 +1,6 @@
+// Write a function, which accepts an integer array and an integer as parameters and count
+// the occurrences of the number in that array.
+
 #include <stdio.h>
 
 int count(int a[], int n, int num)
